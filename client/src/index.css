@@ -1,0 +1,53 @@
+@import '~antd/dist/antd.css';
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+div.flex {
+    display: flex;
+    align-items: center;
+}
+
+.dashboard_charts div {
+    text-align: center;
+}
+
+.dashboard_charts div:nth-child(1) {
+    width: 60%;
+}
+
+.dashboard_charts div:nth-child(2) {
+    width: 30%;
+}
+
+.dashboard_charts {
+    width: 100%;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.container div {
+    margin-top: 10px;
+}
+
+@media(max-width:760px) {
+    .dashboard_charts {
+        flex-direction: column;
+        align-items: center;
+        min-height: 400px;
+    }
+    .dashboard_charts div:nth-child(1) {
+        width: 80%;
+    }
+    .dashboard_charts div:nth-child(2) {
+        margin-top: 50px;
+        width: 80%;
+    }
+}
